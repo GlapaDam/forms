@@ -45,3 +45,19 @@ input[type="email"]:focus {
 input:disabled {
     opacity: 0.2;
 }
+
+select {
+
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #000000;
+    appearance: none;
+    background-image: url(/assets/img/arrow-down-sign-to-navigate.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+
+
+}
