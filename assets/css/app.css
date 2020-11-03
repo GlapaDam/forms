@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form .row {
+    margin: 0 0 15px 0;
+}
+
+form .default-label {
+    display: block;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* aby dostać się do klasy po nazwie */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #000000;
+}
+
+/* aby dostać się do placeholder input i pseudkolasa  */
+input::placeholder {
+    color: red
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border: 3px solid #000000;
+    background-color: #2e6fa8;
+}
+
+input:disabled {
+    opacity: 0.2;
+}

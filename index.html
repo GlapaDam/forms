@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/css/modern-normalize.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <title>forms</title>
+
+
+
+</head>
+
+<body>
+    <!-- naszaDomena?zminna1=wartpsc&zmienna2=wartosc -->
+
+
+
+    <h1>Formularz konaktowy</h1>
+    <form action="" method="GET" enctype="multipart/form-data">
+        <div class="row">
+            <label for="input-name-surname" class="default-label">Imię i nazwisko</label>
+            <input id="input-name-surname" type="text" name="name-surname" placeholder="Wpisz imię i nazwisko"
+                value="wartość domyślna pola tekstowego">
+        </div>
+
+
+        <div class="row">
+            <label for="input-email" class="default-label">Podaj adres email</label>
+            <input type="email" name="email" id="input-email" placeholder="na przykład test@test.pl">
+        </div>
+
+        <div class="row">
+            <label for="input-code" class="default-label">Podaj tajny kod</label>
+            <input type="password" name="code" disabled id="input-code">
+        </div>
+
+        <div class="row">
+            <label for="input-country" class="default-label">Wybierz kraj</label>
+            <select name="country" id="input-country">
+                <option value="" selected>Wybierz swój kraj</option>
+                <option value="pl">Polska</option>>
+                <option value="de">Niemcy</option>>
+                <option value="ru" selected>Rosja</option>>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="textarea-message" class="default-label">Napisz wiadomość</label>
+            <textarea name="message" id="textarea-message">To jest uzupełniona textarea</textarea>
+        </div>
+
+        <p class="default-label">
+            Wybierz płeć
+        </p>
+
+        <div class="row">
+            <input type="radio" name="sex" id="radio-female">
+            <label for="radio-female">Kobieta</label>
+        </div>
+        <div class="row">
+            <input type="radio" name="sex" id="radio-male">
+            <label for="radio-male">Mężczyzna</label>
+        </div>
+
+
+        <p class="default-label">Wybierz zainteresowania</p>
+
+        <div class="row">
+            <input type="checkbox" name="hobby[]" value="hobby-sport" id="hobby-sport">
+            <label for="hobby-sport">Sport</label>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" name="hobby[]" value="hobby-games" id="hobby-games">
+            <label for="hobby-games">Gry</label>
+
+        </div>
+        <div class="row">
+            <input type="checkbox" name="hobby[]" value="hobby-fishing" id="hobby-fishing">
+            <label for="hobby-fishing">Ryby</label>
+
+        </div>
+
+
+        <div class="row">
+            <label for="input-attachment" class="default-label">Dodaj załącznik</label>
+            <input type="file" name="attachment" id="input-attachment">
+        </div>
+
+
+        <!-- <div class="row">
+            <label>
+                Testowy label
+                <input type="text" name="test">
+
+            </label>
+        </div> -->
+        <div class="row">
+            <button type="submit">Wyślij formularz</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
